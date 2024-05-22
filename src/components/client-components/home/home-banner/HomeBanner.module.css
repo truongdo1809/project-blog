@@ -1,0 +1,64 @@
+.home-banner {
+    position: relative;
+    background: url("https://demosites.royal-elementor-addons.com/nature-v2/wp-content/uploads/sites/89/2023/08/pic-1.jpg") top center;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    margin-top: -112px;
+}
+
+.home-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.banner-wrap {
+    min-width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-shadow: 0 0 3px #000;
+    text-align: center;
+    width: 100%;
+}
+
+.banner-wrap h1 {
+    font-size: 52px;
+}
+
+.banner-wrap p {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner-wrap h1 {
+        font-size: 40px;
+    }
+
+    .banner-wrap p {
+        font-size: 16px;
+    }
+}
+
+.get-start {
+    padding: 8px 24px;
+    margin-top: 30px;
+    background-color: var(--secondary-color);
+    border-radius: 4px;
+    border: 1px solid #fff;
+}
+
+.get-start:hover {
+    background-color: var(--primary-color);
+}

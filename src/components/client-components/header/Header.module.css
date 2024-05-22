@@ -1,0 +1,12 @@
+.user-option {
+  opacity: 0;
+  bottom: -110px;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.user-info:hover .user-option {
+  opacity: 1;
+  visibility: visible;
+  bottom: -95px;
+}
